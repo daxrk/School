@@ -1,151 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Sherouk language School</title>
-    <link rel="stylesheet" href="styles.css">
-    <style type="text/css">
-    body {
-        background-color: rgb(246, 242, 242);
-    }
-     ul {
-        display: flex;
-        justify-content:  center;
-        align-items:center;
-        list-style: none;
-        height: 100%;
-        font-size: 17px;
-        font-weight: 600;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        gap: 150px;
-    }
-    ul li a {
-        text-decoration: none;
-        color: black;
-        padding: 15px 50px;
-        border-radius: 25px;
-    }
+    <title>مطعم Lamera</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+            background: url('https://www.seriouseats.com/thmb/DWuO6z0ROsqWexC6mD-0nXBxvRs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20200506-grilled-chicken-vicky-wasik-33-cf3ffb3bda4a4091bf254ff7d13b938e.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
 
-    ul li a:hover{
-        background: rgb(239, 119, 119);
-        border-bottom: 5px solid rgb(130, 17, 17);
-    }
-    h1{
-        border:15px double black;
-        background-color: red;
-        color: white;
-        width: 90%;
-        text-align: center;
-        margin: 30px 50px 0px 50px;
-        height: 30px;
-        padding: 15px;
-    }
-    h2{
-        border: 5px solid green;
-        padding: 10px;
-        margin: 5px;
-        color: rgb(9, 9, 211);
-        width: 15%;
-        background-color:rgb(146, 231, 146);
-    }
-
-    button{
-            margin: 10px auto;
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            padding: 1rem 0;
             text-align: center;
-            border: 3px solid;
-            padding: 5px 9px;
-            width: 150px;
-            transition: .30s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f00;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            margin: 1rem auto;
+            border-radius: 5px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ul.dishes {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.dishes li {
+            padding: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .food-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .food-images img {
+            max-width: 30%;
             border-radius: 10px;
-            font-size: medium;
-            background-color: rgb(0, 119, 255);
-            cursor: pointer;
-            font-weight: bolder;
-
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-    button:hover{
-            background-color: darkgray;
+
+        .food-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-    address a:link{
-			color: red;
-		}
-
-	address a:hover{
-			color: green;
-		}
-
-	address a:active{
-			color: blue;
-		}
-
-	address a:visited{
-			color: orange;
-		}
-    p{
-            font-style: italic;
-            font-size: 19px;
-            font-weight: bolder;
-            text-align: justify;
-        }
-        </style>
-
-
+    </style>
 </head>
-
 <body>
-    <!-- Header Section -->
     <header>
+        <h1> Lamera</h1>
         <nav>
             <ul>
-                <li><a href="#" aria-label="Home" >Home</a></li>
-                <li><a href="#" aria-label="About">About</a></li>
-                <li><a href="#" aria-label="Contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about us"> About Us</a></li>
+                <li><a href="#contact us">Call Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section>
-            <h1>Welcome to El Sherouk language School</h1>
-            <p>We provide quality education to our students</p>
-            <button>Learn More</button>
-        </section>
-    <hr size="6" color=black>
-        <!-- About Section -->
-        <section>
-            <h2>About Us</h2>
-            <p>El Sherouk language School is a premier educational institution that aims to provide a holistic education to its
-                students.</p>
-            <figure>
-                <img src="school-image.jpg" alt="School Image">
-                <figcaption>School Image</figcaption>
-            </figure>
-        </section>
+    <section id="home">
+        <h2>Welcome to a restaurant Lamera</h2>
+        <p>We serve the most delicious dishes in the Arab and international restaurant</p>
+    </section>
 
-        <!-- Contact Section -->
-        <section>
-            <h2>Get in Touch</h2>
-            <p>Contact us for any queries or admissions</p>
-            <address>
-                El Sherouk language School, <br>
-                123, Main Street, <br>
-                Anytown, USA <br>
-                Phone: 555-555-5555 <br>
-                Email: <a href="mailto:info@Elsherouklanguageschool.com">info@sherokschool.com</a>
-            </address>
-        </section>
-    </main>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="food-images">
+            <img src="c:\Users\redaco\Desktop\202107071121562156.jpg" alt="طبق معكرونة">
+            <img src="c:\Users\redaco\Desktop\download.jpeg" alt="طبق السوشي">
+            <img src="c:\Users\redaco\Desktop\48ff4f3f817d24a92d81b4038ec11ae7_w750_h500.jpg" alt="الأرز بالكاري">
+            <img src="c:\Users\redaco\Desktop\The-easiest-4-recipes-of-chicken-in-less-than-30-minutes.jpg" alt="فراخ مشوية">
+            <img src="c:\Users\redaco\Desktop\9b0fd19e11b453700e02a7078d5789df.jpg" alt="بيتزا">
+            <img src="c:\Users\redaco\Desktop\فطير.png" alt="فطير">
+        </div>
+    </section>
 
-    <!-- Footer Section -->
+    <section id="about">
+        <h2>About us</h2>
+        <p>Our restaurant has been serving the best and most delicious dishes since 2012</p>
+        <p>The restaurant is ready to host parties and birthdays</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact us</h2>
+        <p>Address: Nile Corniche, Gate 1, Beni Suef</p>
+        <p>Mob: 01280033206</p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 El Sherouk language school. All rights reserved.</p>
+        <p>&copy; 2024 مطعم Lamera. جميع الحقوق محفوظة.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
-</html>
+	</html>
